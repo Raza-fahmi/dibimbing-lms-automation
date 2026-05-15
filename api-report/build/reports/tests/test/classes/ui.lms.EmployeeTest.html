@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">2</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2m42.39s</div>
+<div class="counter">1m32.33s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">33%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -60,9 +60,6 @@
 </div>
 <div class="tab-container">
 <ul class="tabLinks">
-<li>
-<a href="#">Failed tests</a>
-</li>
 <li>
 <a href="#">Tests</a>
 </li>
@@ -73,125 +70,6 @@
 <a href="#">Standard error</a>
 </li>
 </ul>
-<div class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="testSearchAndDeleteEmployee"></a>
-<h3 class="failures">testSearchAndDeleteEmployee</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Employee with ID AUTO0011778817523538 should be found before delete expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at ui.lms.EmployeeTest.testSearchAndDeleteEmployee(EmployeeTest.java:165)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testSearchAndEditEmployee"></a>
-<h3 class="failures">testSearchAndEditEmployee</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Employee with ID AUTO0011778817523538 should be found before edit expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at ui.lms.EmployeeTest.testSearchAndEditEmployee(EmployeeTest.java:127)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
 <div class="tab">
 <h2>Tests</h2>
 <table>
@@ -204,18 +82,18 @@
 </thead>
 <tr>
 <td class="success">testAddNewEmployee</td>
-<td class="success">8.222s</td>
+<td class="success">23.434s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testSearchAndDeleteEmployee</td>
-<td class="failures">1m18.33s</td>
-<td class="failures">failed</td>
+<td class="success">testSearchAndDeleteEmployee</td>
+<td class="success">47.027s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testSearchAndEditEmployee</td>
-<td class="failures">1m15.84s</td>
-<td class="failures">failed</td>
+<td class="success">testSearchAndEditEmployee</td>
+<td class="success">21.873s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
@@ -223,93 +101,81 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>========== TEST DATA LOADED ==========
-Employee ID: AUTO0011778817523538
-Employee Name: Auto Test Employee 1778817523538
-Employee Email: 1778817523538.auto.test@example.com
+Employee ID: AUTO0011778855551668
+Employee Name: Auto Test Employee 1778855551668
+Employee Email: 1778855551668.auto.test@example.com
 ======================================
 
 Running test on browser: chrome
 Base URL: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
 ========== TEST 1: ADD EMPLOYEE ==========
-Employee ID: AUTO0011778817523538
-Employee Name: Auto Test Employee 1778817523538
+Employee ID: AUTO0011778855551668
+Employee Name: Auto Test Employee 1778855551668
 Waiting for employee table to load...
 Table loaded successfully
-Error selecting program studi: Cannot locate option with text: QA
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: driver.version: unknown
+Selected program studi: QA
 ✓ Employee added successfully!
 ==========================================
 
 Running test on browser: chrome
 Base URL: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
 ========== TEST 2: EDIT EMPLOYEE ==========
-Searching for Employee ID: AUTO0011778817523538
+Searching for Employee ID: AUTO0011778855551668
 === SEARCH FIELD DEBUG ===
 Is Displayed: true
 Is Enabled: true
 Tag Name: input
 Current Value: 
-Search attempt 1 for: AUTO0011778817523538
-Searching for: AUTO0011778817523538
-Search completed for: AUTO0011778817523538
-Search attempt 2 for: AUTO0011778817523538
-Waiting for employee table to load...
-Table loaded successfully
-Searching for: AUTO0011778817523538
-Search completed for: AUTO0011778817523538
-Search attempt 3 for: AUTO0011778817523538
-Waiting for employee table to load...
-Table loaded successfully
-Searching for: AUTO0011778817523538
-Search completed for: AUTO0011778817523538
-All 3 search attempts failed for: AUTO0011778817523538
-Employee found after search: false
+Search attempt 1 for: AUTO0011778855551668
+Searching for: AUTO0011778855551668
+Search completed for: AUTO0011778855551668
+Search succeeded on attempt 1
+Employee found after search: true
+✓ Employee updated successfully!
+  New Name: Edited Auto Test 1778855551668
+==========================================
+
 Running test on browser: chrome
 Base URL: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
 ========== TEST 3: DELETE EMPLOYEE ==========
-Searching for Employee ID: AUTO0011778817523538
-Search attempt 1 for: AUTO0011778817523538
-Searching for: AUTO0011778817523538
-Search completed for: AUTO0011778817523538
-Search attempt 2 for: AUTO0011778817523538
-Waiting for employee table to load...
-Table loaded successfully
-Searching for: AUTO0011778817523538
-Search completed for: AUTO0011778817523538
-Search attempt 3 for: AUTO0011778817523538
-Waiting for employee table to load...
-Table loaded successfully
-Searching for: AUTO0011778817523538
-Search completed for: AUTO0011778817523538
-All 3 search attempts failed for: AUTO0011778817523538
-Employee found before delete: false
+Searching for Employee ID: AUTO0011778855551668
+Search attempt 1 for: AUTO0011778855551668
+Searching for: AUTO0011778855551668
+Search completed for: AUTO0011778855551668
+Search succeeded on attempt 1
+Employee found before delete: true
+Search attempt 1 for: AUTO0011778855551668
+Searching for: AUTO0011778855551668
+Search completed for: AUTO0011778855551668
+All 1 search attempts failed for: AUTO0011778855551668
+Employee found after delete: false
+✓ Employee deleted successfully!
+==========================================
+
 </pre>
 </span>
 </div>
 <div class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/147.0.7727.117/chromedriver
-May 15, 2026 3:58:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 147
-May 15, 2026 3:58:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
-WARNING: Unable to find version of CDP to use for 147.0.7727.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/147.0.7727.117/chromedriver
-May 15, 2026 3:58:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 147
-May 15, 2026 3:58:56 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
-WARNING: Unable to find version of CDP to use for 147.0.7727.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 147.0.7727.117 (resolved driver for Chrome 147)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/147.0.7727.117/chromedriver
-May 15, 2026 4:00:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 147
-May 15, 2026 4:00:16 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
-WARNING: Unable to find version of CDP to use for 147.0.7727.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+<pre>[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.167 (resolved driver for Chrome 148)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/148.0.7778.167/chromedriver
+May 15, 2026 2:32:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 15, 2026 2:32:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.167 (resolved driver for Chrome 148)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/148.0.7778.167/chromedriver
+May 15, 2026 2:33:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 15, 2026 2:33:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.167 (resolved driver for Chrome 148)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/148.0.7778.167/chromedriver
+May 15, 2026 2:33:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 15, 2026 2:33:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.31.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 </pre>
 </span>
 </div>
@@ -321,7 +187,7 @@ WARNING: Unable to find version of CDP to use for 147.0.7727.55. You may need to
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14</a> at May 15, 2026, 4:01:44 AM</p>
+<a href="https://www.gradle.org">Gradle 8.14</a> at May 15, 2026, 2:34:34 PM</p>
 </div>
 </div>
 </body>
