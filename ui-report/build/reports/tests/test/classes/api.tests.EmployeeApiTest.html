@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class api.tests.EmployeeApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class api.tests.EmployeeApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/api.tests.html">api.tests</a> &gt; EmployeeApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.857s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testCreateEmployee</td>
+<td class="success">0.462s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteEmployee</td>
+<td class="success">1.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdateEmployee</td>
+<td class="success">0.390s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>=== Setting up Employee API Tests ===
+=== REQUEST ===
+URL: https://lmsb2b.do.dibimbing.id/graphql
+Body: {variables={password=s2et9bh6l, companyId=811637b1-9989-4d45-a9f5-220c5f2354f7, usernameOrEmail=arwendymelyn@dibimbing.id}, query=mutation login($usernameOrEmail: String!, $password: String!, $companyId: String!) {
+  login(
+    usernameOrEmail: $usernameOrEmail
+    password: $password
+    companyId: $companyId
+  ) {
+    user {
+      username
+      id
+      role
+      __typename
+    }
+    errors {
+      field
+      message
+      __typename
+    }
+    __typename
+  }
+}}
+Cookies: {__cf_bm=c.3cW6gjkUHJeWQItjXwJiVAtcd5CNCB74lh_jhXuVo-1778817087.1959758-1.0.1.1-7Nu2.uh4V7neDCOMt1.miCvc2FADUgxtyl8x0v0pz3Xbby5vc5LbdMFicI2eIZrehXQfw0azt4M2dJQskad6DrKLwHrln3AzkUYLn_hdR.HdN7pMNSvy46E.lIWXZiWm, sid_b2b=s%3AxqoY96AvULaiYRZEHmUSCLVs-ImEsafz.%2Bp%2FJxA%2BrGbfc7BuOW%2BOOpIeYc%2FSe818F2QsLOlbwANw}
+Request method:	POST
+Request URI:	https://lmsb2b.do.dibimbing.id/graphql
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		accept=application/graphql+json, application/json
+				accept-language=id,en-US;q=0.9,en;q=0.8
+				sec-fetch-dest=empty
+				sec-fetch-mode=cors
+				sec-fetch-site=same-site
+				Cookie=__cf_bm=c.3cW6gjkUHJeWQItjXwJiVAtcd5CNCB74lh_jhXuVo-1778817087.1959758-1.0.1.1-7Nu2.uh4V7neDCOMt1.miCvc2FADUgxtyl8x0v0pz3Xbby5vc5LbdMFicI2eIZrehXQfw0azt4M2dJQskad6DrKLwHrln3AzkUYLn_hdR.HdN7pMNSvy46E.lIWXZiWm; sid_b2b=s%3AxqoY96AvULaiYRZEHmUSCLVs-ImEsafz.%2Bp%2FJxA%2BrGbfc7BuOW%2BOOpIeYc%2FSe818F2QsLOlbwANw
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;variables&quot;: {
+        &quot;password&quot;: &quot;s2et9bh6l&quot;,
+        &quot;companyId&quot;: &quot;811637b1-9989-4d45-a9f5-220c5f2354f7&quot;,
+        &quot;usernameOrEmail&quot;: &quot;arwendymelyn@dibimbing.id&quot;
+    },
+    &quot;query&quot;: &quot;mutation login($usernameOrEmail: String!, $password: String!, $companyId: String!) {\n  login(\n    usernameOrEmail: $usernameOrEmail\n    password: $password\n    companyId: $companyId\n  ) {\n    user {\n      username\n      id\n      role\n      __typename\n    }\n    errors {\n      field\n      message\n      __typename\n    }\n    __typename\n  }\n}&quot;
+}
+=== RESPONSE ===
+Status: 200
+Body: {&quot;data&quot;:{&quot;login&quot;:{&quot;user&quot;:{&quot;username&quot;:&quot;arwendymelyn@dibimbing.id&quot;,&quot;id&quot;:&quot;8de8e4e8-a686-4b94-8683-580dc84fbfb1&quot;,&quot;role&quot;:&quot;admin&quot;,&quot;__typename&quot;:&quot;User&quot;},&quot;errors&quot;:null,&quot;__typename&quot;:&quot;UserResponse&quot;}}}
+
+Login successful, authentication cookie stored
+=== Setup completed ===
+Unique Employee ID: AUTO1778817088475
+Unique Email: auto.test.1778817088475@example.com
+=== Test 1: Create Employee ===
+Request method:	POST
+Request URI:	https://lmsb2b.do.dibimbing.id/graphql
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		accept=application/graphql+json, application/json
+				accept-language=id,en-US;q=0.9,en;q=0.8
+				Cookie=__cf_bm=c.3cW6gjkUHJeWQItjXwJiVAtcd5CNCB74lh_jhXuVo-1778817087.1959758-1.0.1.1-7Nu2.uh4V7neDCOMt1.miCvc2FADUgxtyl8x0v0pz3Xbby5vc5LbdMFicI2eIZrehXQfw0azt4M2dJQskad6DrKLwHrln3AzkUYLn_hdR.HdN7pMNSvy46E.lIWXZiWm; sid_b2b=s%3AxqoY96AvULaiYRZEHmUSCLVs-ImEsafz.%2Bp%2FJxA%2BrGbfc7BuOW%2BOOpIeYc%2FSe818F2QsLOlbwANw
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;variables&quot;: {
+        &quot;input&quot;: {
+            &quot;name&quot;: &quot;Auto Test Employee&quot;,
+            &quot;employeeId&quot;: &quot;AUTO1778817088475&quot;,
+            &quot;email&quot;: &quot;auto.test.1778817088475@example.com&quot;,
+            &quot;phoneNumber&quot;: &quot;081234567890&quot;,
+            &quot;divisionId&quot;: &quot;784d157e-6ea8-4166-8afb-b721fbb0a0e2&quot;,
+            &quot;employeeRole&quot;: &quot;Staf&quot;,
+            &quot;gender&quot;: &quot;Laki-laki&quot;,
+            &quot;address&quot;: &quot;Jl. Test Address No. 123&quot;,
+            &quot;nik&quot;: &quot;1234567890123456&quot;,
+            &quot;npwp&quot;: &quot;123456789012345&quot;
+        }
+    },
+    &quot;query&quot;: &quot;mutation createEmployee($input: EmployeeInput!) {\n  createEmployee(input: $input) {\n    id\n    __typename\n  }\n}&quot;
+}
+Created Employee ID: 526549c9-5dfc-4852-8070-1493eb43d269
+=== Test 2: Update Employee ===
+Request method:	POST
+Request URI:	https://lmsb2b.do.dibimbing.id/graphql
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		accept=application/graphql+json, application/json
+				accept-language=id,en-US;q=0.9,en;q=0.8
+				Cookie=__cf_bm=c.3cW6gjkUHJeWQItjXwJiVAtcd5CNCB74lh_jhXuVo-1778817087.1959758-1.0.1.1-7Nu2.uh4V7neDCOMt1.miCvc2FADUgxtyl8x0v0pz3Xbby5vc5LbdMFicI2eIZrehXQfw0azt4M2dJQskad6DrKLwHrln3AzkUYLn_hdR.HdN7pMNSvy46E.lIWXZiWm; sid_b2b=s%3AxqoY96AvULaiYRZEHmUSCLVs-ImEsafz.%2Bp%2FJxA%2BrGbfc7BuOW%2BOOpIeYc%2FSe818F2QsLOlbwANw
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;variables&quot;: {
+        &quot;input&quot;: {
+            &quot;name&quot;: &quot;Updated Auto Test Employee&quot;,
+            &quot;employeeId&quot;: &quot;AUTO1778817088475&quot;,
+            &quot;email&quot;: &quot;auto.test.1778817088475@example.com&quot;,
+            &quot;phoneNumber&quot;: &quot;089876543210&quot;,
+            &quot;divisionId&quot;: &quot;784d157e-6ea8-4166-8afb-b721fbb0a0e2&quot;,
+            &quot;employeeRole&quot;: &quot;Senior Staf&quot;,
+            &quot;gender&quot;: &quot;Laki-laki&quot;,
+            &quot;address&quot;: &quot;Jl. Updated Address No. 456&quot;,
+            &quot;nik&quot;: &quot;1234567890123456&quot;,
+            &quot;npwp&quot;: &quot;123456789012345&quot;
+        },
+        &quot;id&quot;: &quot;526549c9-5dfc-4852-8070-1493eb43d269&quot;
+    },
+    &quot;query&quot;: &quot;mutation updateEmployee($input: EmployeeInput!, $id: String!) {\n  updateEmployee(input: $input, id: $id) {\n    id\n    __typename\n  }\n}&quot;
+}
+Updated Employee ID: 526549c9-5dfc-4852-8070-1493eb43d269
+=== Test 3: Delete Employee ===
+Request method:	POST
+Request URI:	https://lmsb2b.do.dibimbing.id/graphql
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		accept=application/graphql+json, application/json
+				accept-language=id,en-US;q=0.9,en;q=0.8
+				Cookie=__cf_bm=c.3cW6gjkUHJeWQItjXwJiVAtcd5CNCB74lh_jhXuVo-1778817087.1959758-1.0.1.1-7Nu2.uh4V7neDCOMt1.miCvc2FADUgxtyl8x0v0pz3Xbby5vc5LbdMFicI2eIZrehXQfw0azt4M2dJQskad6DrKLwHrln3AzkUYLn_hdR.HdN7pMNSvy46E.lIWXZiWm; sid_b2b=s%3AxqoY96AvULaiYRZEHmUSCLVs-ImEsafz.%2Bp%2FJxA%2BrGbfc7BuOW%2BOOpIeYc%2FSe818F2QsLOlbwANw
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;variables&quot;: {
+        &quot;id&quot;: &quot;526549c9-5dfc-4852-8070-1493eb43d269&quot;
+    },
+    &quot;query&quot;: &quot;mutation deleteEmployee($id: String!) {\n  deleteEmployee(id: $id)\n}&quot;
+}
+Deleted Employee ID: 526549c9-5dfc-4852-8070-1493eb43d269
+Delete result: SUCCESS
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at May 15, 2026, 3:51:30 AM</p>
+</div>
+</div>
+</body>
+</html>
